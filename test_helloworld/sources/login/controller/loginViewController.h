@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "loginModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface loginViewController : UIViewController
+@interface loginViewController : UIViewController{
+    loginModel* M;
+}
+@property loginModel* M;
+@property (weak, nonatomic) IBOutlet UITextField *fieldAccount;
+@property (weak, nonatomic) IBOutlet UITextField *fieldPassword;
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 
 @end
 

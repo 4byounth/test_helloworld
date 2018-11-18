@@ -9,5 +9,15 @@
 #import "loginModel.h"
 
 @implementation loginModel
-
+-(BOOL)login:(NSString *)account :(NSString *)password{
+    if([account  isEqual: @"user"] && [password  isEqual: @"123"]){
+        NSLog(@"登录成功");
+        return YES;
+    }
+    else{
+        NSLog(@"用户名或密码错误");
+        return NO;
+    }
+    
+}
 @end

@@ -11,6 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface loginModel : NSObject
+{
+    NSString* _account;
+    NSString* _password;
+}
+@property(copy,nonatomic) NSString* account;
+@property(copy,nonatomic) NSString* password;
+
+-(BOOL) login:(NSString*)account :(NSString*)password;
 
 @end
 
